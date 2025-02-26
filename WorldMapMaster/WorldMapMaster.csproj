@@ -6,21 +6,6 @@
     <OutputPath>bin\$(Configuration)\Mods\mod</OutputPath>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="VintagestoryAPI">
-      <HintPath>$(VINTAGE_STORY)/VintagestoryAPI.dll</HintPath>
-      <Private>false</Private>
-    </Reference>
-    <Reference Include="VSEssentials">
-      <HintPath>$(VINTAGE_STORY)/Mods/VSEssentials.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="0Harmony">
-      <HintPath>$(VINTAGE_STORY)/Lib/0Harmony.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-  </ItemGroup>
-
 <ItemGroup>
   <Content Include="assets\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -28,6 +13,21 @@
   <Content Include="modinfo.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
   </Content>
+</ItemGroup>
+
+<ItemGroup>
+  <Reference Include="0Harmony">
+    <HintPath>..\..\..\..\Vintagestory-1.20.1\Lib\0Harmony.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VintagestoryAPI">
+    <HintPath>..\..\..\..\Vintagestory-1.20.1\VintagestoryAPI.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
+  <Reference Include="VSEssentials">
+    <HintPath>..\..\..\..\Vintagestory-1.20.1\Mods\VSEssentials.dll</HintPath>
+    <Private>False</Private>
+  </Reference>
 </ItemGroup>
 
 </Project>
